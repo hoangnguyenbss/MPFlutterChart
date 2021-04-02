@@ -260,7 +260,8 @@ abstract class BaseDataSet<T extends Entry> implements IDataSet<T> {
 
   @override
   void setValueTextSize(double size) {
-    _valueTextSize = Utils.convertDpToPixel(size);
+    //correct size, no more depends on screensize
+    _valueTextSize = size;
   }
 
   @override
